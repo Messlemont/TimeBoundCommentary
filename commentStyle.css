@@ -1,0 +1,97 @@
+/*TRBL*/
+
+#wrapper{
+    display:flex;
+    overflow:hidden;
+    /*border: 1px solid red;*/
+    margin: 5em 2% 2.5em 2%;
+    width:80%;
+}
+
+#leftSide{
+    float:left;
+    /*border: 1px solid deeppink;*/
+    overflow:hidden;
+}
+
+/*also acting as a wrapper for the comments flex*/
+#rightSide{
+    float:left;
+    flex:1;
+    /*border: 1px solid purple;*/
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+    /*Keeps this as tall as the YT video, stops the comments from expanding the div*/
+    max-height: 360px;
+}
+
+#comments{
+    flex:1;
+    background-color: steelblue;
+    overflow:scroll;
+    overflow-x:hidden;
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+.comment{
+    font-family: Arial , Verdana , "Century Gothic";
+    background-color: cadetblue;
+    border: 1px solid #a4bcfe;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+li{
+    padding: 0.25em 0em 0.5em 0.15em;
+    margin-top:0.1em;
+    margin-bottom:0.25em;
+}
+.topCom{
+    display:flex;
+    margin-bottom:0.25em;
+}
+.comButts{
+    float:right;
+}
+.commBody{
+    margin-left:3%;
+    margin-right:3%;
+
+    padding-top: 0.5em;
+    padding-left: 3%;
+    padding-bottom: 5%;
+
+    background-color: #a4bcfe;
+    border-top: 0.75px solid #246f72;
+    border-bottom: 0.75px solid #246f72;
+
+    overflow-wrap: break-word;
+}
+
+#commForm{
+
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    background-color: lightblue;
+}
+#commButt{
+    margin-left: 0.25em;
+    width:20%
+}
+#comm{
+    width:75%
+}
+#timeSlider{
+    width:65%
+}
+
+.replyButt , .delButt{
+    font-size: 50%;
+}
+.reply{
+    margin-left: 5%;
+}
+
